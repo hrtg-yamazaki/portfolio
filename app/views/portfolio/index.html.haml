@@ -1,1 +1,22 @@
-%h1 Hello World!
+.top-wrapper
+
+  %header.header
+    .header-box.clearfix
+      .header-left
+        = link_to "PORTFORIO", root_path, class: "header-left__logo"
+      .header-right
+        .header-right__sp
+          %p.header-right__sp__close close
+          = fa_icon "bars"
+          .header-right__sp__menu
+            .header-right__sp__menu--list.js-works
+              %p 開発実績
+            .header-right__sp__menu--list.js-about
+              %p 管理者について
+            .header-right__sp__menu--list.js-pageinfo
+              %p ページ情報
+        .header-right__pc
+          %p.header-right__pc__link.js-works Works
+          %p.header-right__pc__link.js-about About
+          %p.header-right__pc__link.js-pageinfo PageInfo
+
