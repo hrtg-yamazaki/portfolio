@@ -114,3 +114,43 @@
             .works-list__box__content
               %p.works-list__box__content--detail プログラミングスクールで学習した内容を元に開発を行った、チャットアプリケーションです。非同期通信を用いた画像付きメッセージの送信・自動更新機能が実装されており、グループ機能を利用したコミュニケーションが可能です。
               %p.access-attention ※EC2インスタンス停止中(リンク先はGitHubのリポジトリURLです。)
+
+
+.about-wrapper
+  .about-section
+
+    .about-head
+      %h2.about-head__en About Me
+      %span.about-head__jp -管理者について-
+    
+    .about-main
+      .about-main__box
+        .about-main__box__head
+          .about-name
+            %h3.about-name__jp 山﨑 啓世
+            %h3.about-name__en Hirotsugu Yamazaki
+        .about-main__box__detail
+          .about-profile
+            %p.about-profile__text 神奈川県横浜市出身。2019年9月末にプログラミングスクール「TECH::EXPERT」に入学、同12月に卒業し、現在は学習と開発を続けながら、エンジニアを目指して就職活動を行っています。
+          .about-learn
+            .about-learn__box
+              .about-learn__box__head
+                %h4.about-learn__box__head--text 学習中/使用中の言語、技術など
+              .about-learn__box__tech
+                %h5.about-learn__box__tech--text Ruby / Ruby on Rails / python / django / html / css / haml / sass(scss) / JavaScript / jQuery / SQL / Git / GitHub / AWS(EC2, S3) / heroku / (etc...)
+          .about-contact
+            .about-contact__head
+              %h4.about-contact__head__text リンク先 / お問い合わせ
+            .about-contact__link
+              %h5.about-contact__link__text ◎ リンク
+              = link_to "・GitHub", "https://github.com/hrtg-yamazaki/", class: "about-contact__link__github"
+              %br/
+              = link_to "・Wantedly ( 作成中 )", "#", class: "about-contact__link__wantedly"
+            .about-contact__mail
+              %p.about-contact__mail__head ◎ メールアドレス
+              = mail_to "t62.yamazaki.hirotsugu@gmail.com", "・Gmail ( 就職活動用 )", class: "about-contact__mail__address"
+              %br/
+              = mail_to "hrtg.yamazaki@gmail.com", "・Gmail ( その他 )", class: "about-contact__mail__address"
+              %p.mail-attention ※企業の採用担当者様は（就職活動用）に、その他お問い合わせは（その他）からご連絡ください。
+              %p.mail-attention ※管理の都合で、翌日以降の返信になる場合がございます。ご了承ください。
+
