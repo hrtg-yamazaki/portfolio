@@ -37,3 +37,80 @@
 
 .works-wrapper
   .works-section
+    .works-head
+      %h2.works-head__en Works
+      %span.works-head__jp -開発実績-
+      %p.recommend-browser
+        ※最新版のGoogle Chromeでのアクセスを推奨いたします。
+        %br
+        (一部ブラウザではレイアウトが正しく表示されないことがございます。)
+
+    .works-lists
+      .works-lists__box
+
+        .works-list
+          .works-list__box
+            .works-list__box__head.clearfix<
+              .works-list__box__head--left
+                = link_to "coming soon", "#" , class: "works-title" 
+                .dev-env
+                  .dev-env__head.clearfix
+                    %h5 開発環境
+                    %span.ruby-app Ruby
+                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / postgresSQL / heroku / GitHub /
+              .works-list__box__head--right
+                -# .works-作品名.page-image
+            .works-list__box__content
+              %p.works-list__box__content--detail 開発中....
+              %p.access-attention 現在作成中です
+
+        .works-list
+          .works-list__box
+            .works-list__box__head.clearfix<
+              .works-list__box__head--left
+                = link_to "coming soon", "#" , class: "works-title" 
+                .dev-env
+                  .dev-env__head.clearfix
+                    %h5 開発環境
+                    %span.python-app Python
+                  %p.used-tech Python / Django / scss / jQuery / postgresSQL / heroku / GitHub /
+              .works-list__box__head--right
+                -# .works-作品名.page-image
+            .works-list__box__content
+              %p.works-list__box__content--detail 開発中....
+              %p.access-attention 現在作成中です
+
+        .works-list
+          .works-list__box
+            .works-list__box__head.clearfix<
+              .works-list__box__head--left
+                = link_to "FreemarketSample62e","http://13.114.37.243/", class: "works-title"
+                .dev-env
+                  .dev-env__head.clearfix
+                    %h5 開発環境
+                    %span.ruby-app Ruby
+                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / unicorn / nginx / mySQL / capistrano / AWS (EC2, S3) / GitHub /
+              .works-list__box__head--right
+                .works-fmsample.page-image
+            .works-list__box__content
+              %p.works-list__box__content--detail プログラミングスクールの最終課題として開発に取り組んだ、既存フリマアプリのコピーサイトです。同期のメンバーと４人チームで、アジャイル方式による共同開発を行いました。デプロイ先として、AWS(EC2, S3)を利用しています。
+              %p.access-attention<
+                ※アクセスにはBasic認証が必要です。ご希望の際は
+                %span.js-mail メール
+                にてご連絡ください。
+
+        .works-list
+          .works-list__box
+            .works-list__box__head.clearfix<
+              .works-list__box__head--left
+                = link_to "ChatSpace", "https://github.com/hrtg-yamazaki/chat-space" , class: "works-title" 
+                .dev-env
+                  .dev-env__head.clearfix
+                    %h5 開発環境
+                    %span.ruby-app Ruby
+                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / mySQL / GitHub /
+              .works-list__box__head--right
+                .works-chatspace.page-image
+            .works-list__box__content
+              %p.works-list__box__content--detail プログラミングスクールで学習した内容を元に開発を行った、チャットアプリケーションです。非同期通信を用いた画像付きメッセージの送信・自動更新機能が実装されており、グループ機能を利用したコミュニケーションが可能です。
+              %p.access-attention ※EC2インスタンス停止中(リンク先はGitHubのリポジトリURLです。)
