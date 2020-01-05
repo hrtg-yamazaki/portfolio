@@ -1,5 +1,26 @@
 # README
 
+## このアプリについて
+
+
+### 概要
+
+自身が開発した(これから開発する)アプリケーションをまとめて紹介するためのポートフォリオサイトです。
+
+### 作成意図について
+
+サーバーサイドの学習を主な目的として開発した他のアプリケーションとは違い、フロントエンドの学習のために作成しました。htmlとcssの基本的な仕組みの実践と、JavaScriptの基礎的なDOM操作のおさらいのため、cssフレームワークの類は一切使用していません。
+
+### 使用技術・開発環境
+
+Ruby / Ruby on rails / haml / scss / jQuery / で作成したシンプルなワンページアプリケーションです。現在は１ページですが、mailerやコメント機能など、今後のサーバサイドにおけるブラッシュを見越して、Ruby on Railsを利用しています。
+
+## 更新履歴
+2019.12下旬 作成開始
+2020.01.04 version 1.0.0 の完成(ローカル環境・未デプロイ)
+
+
+<!-- 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -21,4 +42,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* ... -->
