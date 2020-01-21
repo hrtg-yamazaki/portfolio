@@ -55,7 +55,7 @@
                     %span.python-app Python
                   %p.used-tech Python3 / Django / scss / jQuery / postgresSQL / heroku / GitHub /
               .works-list__box__head--right
-                .works-djappy.page-image
+                = link_to '', "https://djappy.herokuapp.com/", class:'page-image works-djappy'
             .works-list__box__content
               %p.works-list__box__content--detail オリジナルのブログアプリケーションです。「PythonとDjangoを独学でも基本からしっかり理解する」をテーマに、スタンダードな機能(画像付き記事の投稿・編集・検索、ユーザー認証など)を出来る限り丁寧に実装していきました。今後は管理人の学習の進行に応じて、機械学習関連の機能を追加していく予定です。
               -# %p.access-attention 
@@ -70,7 +70,7 @@
                     %span.ruby-app Ruby
                   %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / unicorn / nginx / mySQL / capistrano / AWS (EC2, S3) / GitHub /
               .works-list__box__head--right
-                .works-fmsample.page-image
+                = link_to '', "http://13.114.37.243/", class:'page-image works-fmsample'
             .works-list__box__content
               %p.works-list__box__content--detail プログラミングスクールの最終課題として開発に取り組んだ、既存フリマアプリのコピーサイトです。同期のメンバーと４人チームで、アジャイル方式による共同開発を行いました。デプロイ先として、AWS(EC2, S3)を利用しています。
               %p.access-attention<
@@ -88,7 +88,7 @@
                     %span.ruby-app Ruby
                   %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / postgresSQL / heroku / GitHub /
               .works-list__box__head--right
-                -# .works-作品名.page-image
+                %p.works-in-prep no image
             .works-list__box__content
               %p.works-list__box__content--detail ( Railsを用いて開発中の、生活習慣を記録するアプリケーションです )
               %p.access-attention 現在作成中です
@@ -96,14 +96,14 @@
           .works-list__box
             .works-list__box__head.clearfix<
               .works-list__box__head--left
-                = link_to "ChatSpace", "https://github.com/hrtg-yamazaki/chat-space" , class: "works-title" 
+                = link_to "ChatSpace", "https://github.com/hrtg-yamazaki/chat-space" , class: "works-title"
                 .dev-env
                   .dev-env__head.clearfix
                     %h5 開発環境
                     %span.ruby-app Ruby
                   %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / mySQL / GitHub /
               .works-list__box__head--right
-                .works-chatspace.page-image
+                = link_to '', "https://github.com/hrtg-yamazaki/chat-space", class:'page-image works-chatspace'
             .works-list__box__content
               %p.works-list__box__content--detail プログラミングスクールで学習した内容を元に開発を行った、チャットアプリケーションです。非同期通信を用いた画像付きメッセージの送信・自動更新機能が実装されており、グループ機能を利用したコミュニケーションが可能です。
               %p.access-attention ※EC2インスタンス停止中(リンク先はGitHubのリポジトリURLです。)

@@ -60,7 +60,7 @@ header{
     letter-spacing: 1px;
   }
   &__logo:hover{
-    color: blue;
+    color: steelblue;
   }
 }
 
@@ -83,7 +83,7 @@ header{
       cursor: pointer;
     }
     &__link:hover{
-      color: blue;
+      color: steelblue;
     }
   }
 }
@@ -138,7 +138,7 @@ header{
           cursor: pointer;
         }
         .js-profile:hover{
-          color: blue;
+          color: steelblue;
         }
       }
       &--tips{
@@ -230,28 +230,39 @@ header{
   }
 }
 
-.works-fmsample{
+.page-image{
   height: 100%;
   width: 100%;
-  background-image: image_url("ss_fmsample.png");
   background-size: cover;
   border: 1px solid navy;
+  display: block;
+}
+
+.page-image:hover{
+  opacity: 0.4;
+}
+
+.works-fmsample{
+  background-image: image_url("ss_fmsample.png");
 }
 
 .works-chatspace{
-  height: 100%;
-  width: 100%;
   background-image: image_url("ss_chatspace2.png");
-  background-size: cover;
-  border: 1px solid navy;
 }
 
 .works-djappy{
+  background-image: image_url("ss_djappy3.png");
+}
+
+.works-in-prep{
   height: 100%;
   width: 100%;
-  background-image: image_url("ss_djappy3.png");
-  background-size: cover;
+  background-color: lightgray;
   border: 1px solid navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
 }
 
 .works-title{
@@ -264,7 +275,7 @@ header{
 }
 
 .works-title:hover{
-  color: blue;
+  color: steelblue;
 }
 
 .dev-env{
@@ -721,7 +732,7 @@ header{
       cursor: pointer;
     }
     .fa-bars:hover{
-      color: blue;
+      color: steelblue;
     }
     &__close{
       font-size: 14px;
@@ -732,7 +743,7 @@ header{
       cursor: pointer;
     }
     &__close:hover{
-      color: blue;
+      color: steelblue;
     }
     &__menu{
       display: none;
@@ -752,7 +763,7 @@ header{
           // -webkit-text-stroke: 0.1px black;
         }
         :hover{
-          color: blue;
+          color: steelblue;
         }
       }
     }
@@ -850,8 +861,13 @@ header{
       }
     }
   }
+
   .page-image{
     padding-top: 53%;
+  }
+
+  .works-in-prep{
+    display: none;
   }
 
   .access-attention{
