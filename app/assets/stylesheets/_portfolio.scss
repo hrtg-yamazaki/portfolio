@@ -94,7 +94,7 @@ header{
 
 .introduction{
   width: 360px;
-  height: 200px;
+  // height: 200px;
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -246,6 +246,14 @@ header{
   border: 1px solid navy;
 }
 
+.works-djappy{
+  height: 100%;
+  width: 100%;
+  background-image: image_url("ss_djappy3.png");
+  background-size: cover;
+  border: 1px solid navy;
+}
+
 .works-title{
   font-weight: bold;
   font-size: 16px;
@@ -304,7 +312,6 @@ header{
   margin-top: 5px;
 }
 
-
 .access-attention{
   position: absolute;
   font-size: 10px;
@@ -312,6 +319,15 @@ header{
   color: red;
   right: 0;
   bottom: 0;
+}
+
+.js-mail{
+  color:rgb(33, 63, 87);
+  cursor: pointer;
+}
+
+.js-mail:hover{
+  color:steelblue;
 }
 
 .about-wrapper{
@@ -430,11 +446,22 @@ header{
     }
     a{
       font-size: 14px;
-      margin-left: 10px;
       color: steelblue;
+      width: 48%;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 6px;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid whitesmoke;
+      text-decoration: none;
+      color: whitesmoke;
+      border-radius: 4px;
     }
     a:hover{
-      color: lightblue;
+      color: steelblue;
+      background-color: lightgray;
     }
   }
   &__mail{
@@ -446,11 +473,22 @@ header{
     }
     &__address{
       font-size: 14px;
-      margin-left: 10px;
       color: steelblue;
+      width: 48%;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 6px;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid whitesmoke;
+      text-decoration: none;
+      color: whitesmoke;
+      border-radius: 4px;
     }
     &__address:hover{
-      color:lightblue;
+      color: steelblue;
+      background-color: lightgray;
     }
   }
 }
@@ -746,6 +784,19 @@ header{
   .works-list{
     width: 100%;
     height: 25%;
+  }
+}
+
+@media (max-width: 600px){
+  .about-contact__link{
+    a{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .about-contact__mail__address{
+    width: 100%;
+    margin-left: 0;
   }
 }
 

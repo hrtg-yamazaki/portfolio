@@ -30,8 +30,7 @@
               こちらのページは、私
               %span.js-profile Hirotsugu Yamazaki
               のポートフォリオサイトです。主にRubyやPythonで開発したアプリケーションを公開しています。
-            %p.self-intro__explain__box--tips<
-              (このページのレイアウトに、レスポンシブデザインを導入しました。ご興味のある方は、ぜひ複数デバイスでのアクセスをお試しください！)
+            -# %p.self-intro__explain__box--tips
 
 
 .works-wrapper
@@ -49,32 +48,17 @@
           .works-list__box
             .works-list__box__head.clearfix<
               .works-list__box__head--left
-                = link_to "coming soon", "#" , class: "works-title" 
-                .dev-env
-                  .dev-env__head.clearfix
-                    %h5 開発環境
-                    %span.ruby-app Ruby
-                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / postgresSQL / heroku / GitHub /
-              .works-list__box__head--right
-                -# .works-作品名.page-image
-            .works-list__box__content
-              %p.works-list__box__content--detail 開発中....
-              %p.access-attention 現在作成中です
-        .works-list
-          .works-list__box
-            .works-list__box__head.clearfix<
-              .works-list__box__head--left
-                = link_to "coming soon", "#" , class: "works-title" 
+                = link_to "Djappy", "#" , class: "works-title" 
                 .dev-env
                   .dev-env__head.clearfix
                     %h5 開発環境
                     %span.python-app Python
                   %p.used-tech Python3 / Django / scss / jQuery / postgresSQL / heroku / GitHub /
               .works-list__box__head--right
-                -# .works-作品名.page-image
+                .works-djappy.page-image
             .works-list__box__content
-              %p.works-list__box__content--detail 開発中....
-              %p.access-attention 現在作成中です
+              %p.works-list__box__content--detail オリジナルのブログアプリケーションです。「PythonとDjangoを独学でも基本からしっかり理解する」をテーマに、スタンダードな機能(画像付き記事の投稿・編集・検索、ユーザー認証など)を出来る限り丁寧に実装していきました。今後は管理人の学習の進行に応じて、機械学習関連の機能を追加していく予定です。
+              -# %p.access-attention 
         .works-list
           .works-list__box
             .works-list__box__head.clearfix<
@@ -93,6 +77,21 @@
                 ※アクセスにはBasic認証が必要です。ご希望の際は
                 %span.js-mail メール
                 にてご連絡ください。
+        .works-list
+          .works-list__box
+            .works-list__box__head.clearfix<
+              .works-list__box__head--left
+                = link_to "coming soon", "#" , class: "works-title" 
+                .dev-env
+                  .dev-env__head.clearfix
+                    %h5 開発環境
+                    %span.ruby-app Ruby
+                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / postgresSQL / heroku / GitHub /
+              .works-list__box__head--right
+                -# .works-作品名.page-image
+            .works-list__box__content
+              %p.works-list__box__content--detail ( Railsを用いて開発中の、生活習慣を記録するアプリケーションです )
+              %p.access-attention 現在作成中です
         .works-list
           .works-list__box
             .works-list__box__head.clearfix<
@@ -135,14 +134,18 @@
               %h4.about-contact__head__text リンク先 / お問い合わせ
             .about-contact__link
               %h5.about-contact__link__text ◎ リンク
-              = link_to "・GitHub", "https://github.com/hrtg-yamazaki/", class: "about-contact__link__github"
-              %br/
-              = link_to "・Wantedly ( 作成中 )", "#", class: "about-contact__link__wantedly"
+              = link_to "https://github.com/hrtg-yamazaki/", class: "about-contact__link__github" do
+                = fa_icon "github"
+                %span GitHub
+              = link_to "Wantedly ( 作成中 )", "#", class: "about-contact__link__wantedly"
             .about-contact__mail
               %p.about-contact__mail__head ◎ メールアドレス
-              = mail_to "t62.yamazaki.hirotsugu@gmail.com", "・Gmail ( 就職活動用 )", class: "about-contact__mail__address"
-              %br/
-              = mail_to "hrtg.yamazaki@gmail.com", "・Gmail ( その他 )", class: "about-contact__mail__address"
+              = mail_to "t62.yamazaki.hirotsugu@gmail.com", class: "about-contact__mail__address" do
+                = fa_icon "envelope"
+                %span gmail ( 就職活動用 )
+              = mail_to "hrtg.yamazaki@gmail.com", class: "about-contact__mail__address" do
+                = fa_icon "envelope"
+                %span gmail ( その他 )
               %p.mail-attention ※企業の採用担当者様は（就職活動用）に、その他お問い合わせは（その他）からご連絡ください。
               %p.mail-attention ※管理の都合で、翌日以降の返信になる場合がございます。ご了承ください。
 
@@ -168,7 +171,7 @@
               %p.speaker-name Hirotsugu Yamazaki
               .white-balloon
                 %p.site-comment
-                  Ruby / Ruby on rails / haml / scss / jQuery / で作成したシンプルなワンページアプリケーションです。
+                  Ruby / Ruby on rails / haml / scss / jQuery / で作成したワンページアプリケーションです。
                   %br/
                   また、開発とデプロイにあたって、 GitHub と Heroku を利用しています。
           .green-comment.clearfix
@@ -210,7 +213,7 @@
               %p.speaker-name Hirotsugu Yamazaki
               .white-balloon
                 %p.site-comment
-                  ここで公開しているアプリケーションは、このページを含め、管理人の学習度に合わせて今後もブラッシュアップの予定です。
+                  ここで公開しているアプリケーションは、このページを含め、管理人の学習度に合わせて今後もブラッシュアップしていきます！
           .white-comment.clearfix
             .white-comment__side
               .speaker-icon

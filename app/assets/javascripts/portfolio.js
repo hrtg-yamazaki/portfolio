@@ -30,11 +30,20 @@ $(document).on("turbolinks:load", function(){
       $("html, body").animate({scrollTop: about}, 777);
     })
 
+    $(".js-mail").click(function(){
+      var contact = $(".about-contact").offset().top;
+      $("html, body").animate({scrollTop: contact}, 777);
+    })
+
     $(".js-pageinfo").click(function(){
       var pageInfo = $(".site-wrapper").offset().top;
       $("html, body").animate({scrollTop: pageInfo}, 777);
     })
 
+    $(".js-profile").click(function(){
+      var about = $(".about-wrapper").offset().top;
+      $("html, body").animate({scrollTop: about}, 777);
+    })
 
     //***** ページTOPへのスクロール *****/
     $(".footer__box__button__text").click(function(){
