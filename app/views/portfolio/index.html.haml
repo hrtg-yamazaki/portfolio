@@ -48,7 +48,9 @@
           .works-list__box
             .works-list__box__head.clearfix<
               .works-list__box__head--left
-                = link_to "Djappy", "https://djappy.herokuapp.com/" , class: "works-title" 
+                = link_to "Djappy", "https://djappy.herokuapp.com/" , class: "works-title"
+                = link_to 'https://github.com/hrtg-yamazaki/djappy', class: 'works-github' do
+                  = fa_icon 'github'
                 .dev-env
                   .dev-env__head.clearfix
                     %h5 開発環境
@@ -64,6 +66,8 @@
             .works-list__box__head.clearfix<
               .works-list__box__head--left
                 = link_to "FreemarketSample62e","http://13.114.37.243/", class: "works-title"
+                = link_to 'https://github.com/hrtg-yamazaki/freemarket_sample_62e', class: 'works-github' do
+                  = fa_icon 'github'
                 .dev-env
                   .dev-env__head.clearfix
                     %h5 開発環境
@@ -97,6 +101,8 @@
             .works-list__box__head.clearfix<
               .works-list__box__head--left
                 = link_to "ChatSpace", "https://github.com/hrtg-yamazaki/chat-space" , class: "works-title"
+                = link_to 'https://github.com/hrtg-yamazaki/chat-space', class: 'works-github' do
+                  = fa_icon 'github'
                 .dev-env
                   .dev-env__head.clearfix
                     %h5 開発環境
@@ -112,7 +118,7 @@
 .about-wrapper
   .about-section
     .about-head
-      %h2.about-head__en About Me
+      %h2.about-head__en About
       %span.about-head__jp -管理者について-
     .about-main
       .about-main__box

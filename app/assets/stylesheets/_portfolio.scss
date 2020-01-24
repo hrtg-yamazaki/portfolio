@@ -278,6 +278,17 @@ header{
   color: steelblue;
 }
 
+.works-github{
+  color: rgb(31, 52, 85);
+  font-size: 26px;
+  float: right;
+  line-height: 120%;
+}
+
+.works-github:hover{
+  color: steelblue;
+}
+
 .dev-env{
   font-size: 12px;
   margin-top: 10px;
@@ -717,7 +728,7 @@ header{
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1080px){
   .header-right__sp{
     height: 100%;
     width: 100%;
@@ -811,7 +822,7 @@ header{
   }
 }
 
-@media (max-width: 550px){
+@media (max-width: 600px){
 
   .works-wrapper{
     height: auto;
@@ -963,6 +974,12 @@ header{
     font-size: 12px;
   }
 
+}
+
+@media (max-width: 375px){
+  .introduction{
+    right: 5px;
+  }
 }
 
 @media (max-width: 360px){

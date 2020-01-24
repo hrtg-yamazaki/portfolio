@@ -15,7 +15,7 @@
 ### 使用技術・開発環境
 
 ##### サーバーサイド
-Ruby / Ruby on Rails
+Ruby / Ruby on RRails
 ##### フロントエンド
 haml / scss / jQuery
 ##### その他
