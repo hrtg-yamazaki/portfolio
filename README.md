@@ -15,7 +15,7 @@
 ### 使用技術・開発環境
 
 ##### サーバーサイド
-Ruby / Ruby on RRails
+Ruby / Ruby on Rails
 ##### フロントエンド
 haml / scss / jQuery
 ##### その他
@@ -27,28 +27,3 @@ PostgreSQL / GitHub / Heroku
 2020.01.04 ローカル環境での完成  
 2020.01.21 フロントエンドの修正、herokuへデプロイ  
 2020.01.24 各所へのリンクを調整
-
-
-<!-- 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ... -->

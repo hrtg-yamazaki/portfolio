@@ -569,9 +569,11 @@ header{
 .site-contents{
   width: 100%;
   padding: 20px;
+  color: #333;
 }
 
 .white-comment{
+  display: none;
   width: 100%;
   margin-bottom: 20px;
   &__side{
@@ -660,6 +662,7 @@ header{
   position: relative;
   display: inline-block;
   text-align: left;
+  cursor: pointer;
 }
 
 .green-balloon:before{
@@ -676,7 +679,10 @@ header{
 
 .site-comment{
   font-size: 14px;
-  color: #333;
+}
+
+.green-balloon:hover{
+  color: steelblue;
 }
 
 .footer{

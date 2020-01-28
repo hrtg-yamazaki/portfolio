@@ -6,11 +6,9 @@ $(document).on("turbolinks:load", function(){
 
     // メニュー展開 //
     $(".fa-bars").click(function(){
-    
       $(this).next(".header-right__sp__menu").slideToggle();
       $(this).css("display", "none");
       $(".header-right__sp__close").css("display", "inline");
-
     });
 
     $(".header-right__sp__close").click(function(){
@@ -45,7 +43,24 @@ $(document).on("turbolinks:load", function(){
       $("html, body").animate({scrollTop: about}, 777);
     })
 
+
+    //**** インフォ展開 ***** //
+
+    $(".js-green-tech").click(function(){
+      $(".js-white-tech").slideToggle();
+    })
+
+    $(".js-green-aim").click(function(){
+      $(".js-white-aim").slideToggle();
+    })
+
+    $(".js-green-message").click(function(){
+      $(".js-white-message").slideToggle();
+    })
+
+
     //***** ページTOPへのスクロール *****/
+
     $(".footer__box__button__text").click(function(){
       var topWrapper = $(".top-wrapper").offset().top;
       $("html, body").animate({scrollTop: topWrapper}, 777);

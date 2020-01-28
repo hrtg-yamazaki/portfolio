@@ -55,11 +55,11 @@
                   .dev-env__head.clearfix
                     %h5 開発環境
                     %span.python-app Python
-                  %p.used-tech Python3 / Django / scss / jQuery / postgresSQL / heroku / GitHub /
+                  %p.used-tech Python3 / Django / scss / jQuery / postgresSQL / Heroku / Cloudinary / GitHub /
               .works-list__box__head--right
                 = link_to '', "https://djappy.herokuapp.com/", class:'page-image works-djappy'
             .works-list__box__content
-              %p.works-list__box__content--detail オリジナルのブログアプリケーションです。「PythonとDjangoを独学でも基本からしっかり理解する」をテーマに、スタンダードな機能(画像付き記事の投稿・編集・検索、ユーザー認証など)を出来る限り丁寧に実装していきました。今後は管理人の学習の進行に応じて、機械学習関連の機能を追加していく予定です。レスポンシブ対応済。
+              %p.works-list__box__content--detail オリジナルのブログアプリケーションです。「PythonとDjangoを基本からしっかり理解する」をテーマに、スタンダードな機能(画像付き記事の投稿・編集・検索、ユーザー認証など)を出来る限り丁寧に実装していきました。今後は管理人の学習の進行を反映させる形で、機械学習関連の機能を中心にアップデートしていきたいと考えています。レスポンシブ対応済。
               -# %p.access-attention 
         .works-list
           .works-list__box
@@ -94,7 +94,7 @@
               .works-list__box__head--right
                 %p.works-in-prep no image
             .works-list__box__content
-              %p.works-list__box__content--detail ( Railsを用いて開発中の、生活習慣を記録するアプリケーションです )
+              %p.works-list__box__content--detail ( Railsを使って開発中の、生活習慣を記録するアプリケーションです )
               %p.access-attention 現在作成中です
         .works-list
           .works-list__box
@@ -166,10 +166,10 @@
         .site-contents
           .green-comment.clearfix
             .green-comment__inside
-              .green-balloon
+              .green-balloon.js-green-tech
                 %p.site-comment
                   使用技術・開発環境について
-          .white-comment.clearfix
+          .white-comment.js-white-tech.clearfix
             .white-comment__side
               .speaker-icon
                 %h4.speaker-icon__name HY
@@ -182,10 +182,10 @@
                   また、開発とデプロイにあたって、 GitHub と Heroku を利用しています。
           .green-comment.clearfix
             .green-comment__inside
-              .green-balloon
+              .green-balloon.js-green-aim
                 %p.site-comment
                   作成意図について
-          .white-comment.clearfix
+          .white-comment.js-white-aim.clearfix
             .white-comment__side
               .speaker-icon
                 %h4.speaker-icon__name HY
@@ -196,7 +196,7 @@
                   サーバーサイドの学習を主な目的として開発した他のアプリケーションとは違い、フロントエンドの学習のために作成しました。
                   %br/
                   htmlとcssの基本的な仕組みの実践と、JavaScriptの基礎的なDOM操作のおさらいのため、cssフレームワークの類は一切使用していません。
-          .white-comment.clearfix
+          .white-comment.js-white-aim.clearfix
             .white-comment__side
               .speaker-icon
                 %h4.speaker-icon__name HY
@@ -209,9 +209,9 @@
                   PCだけでなく、スマートフォンやタブレットでの表示にもある程度対応しておりますので、ご興味ある方はぜひ複数デバイスでの表示をお試し下さい。
           .green-comment.clearfix
             .green-comment__inside
-              .green-balloon
+              .green-balloon.js-green-message
                 %p.site-comment その他、管理人よりメッセージ
-          .white-comment.clearfix
+          .white-comment.js-white-message.clearfix
             .white-comment__side
               .speaker-icon
                 %h4.speaker-icon__name HY
@@ -220,7 +220,7 @@
               .white-balloon
                 %p.site-comment
                   ここで公開しているアプリケーションは、このページを含め、管理人の学習度に合わせて今後もブラッシュアップしていきます！
-          .white-comment.clearfix
+          .white-comment.js-white-message.clearfix
             .white-comment__side
               .speaker-icon
                 %h4.speaker-icon__name HY
