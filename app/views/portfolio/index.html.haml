@@ -85,12 +85,14 @@
           .works-list__box
             .works-list__box__head.clearfix<
               .works-list__box__head--left
-                = link_to "coming soon", "#" , class: "works-title" 
+                = link_to "GiantStep", "#" , class: "works-title"
+                = link_to 'https://github.com/hrtg-yamazaki/GiantStep', class: 'works-github' do
+                  = fa_icon 'github'
                 .dev-env
                   .dev-env__head.clearfix
                     %h5 開発環境
                     %span.ruby-app Ruby
-                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / postgresSQL / heroku / GitHub /
+                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / Chart.js / postgresSQL / heroku / GitHub /
               .works-list__box__head--right
                 %p.works-in-prep no image
             .works-list__box__content
@@ -134,7 +136,7 @@
               .about-learn__box__head
                 %h4.about-learn__box__head--text 学習中/使用中の言語、技術など
               .about-learn__box__tech
-                %h5.about-learn__box__tech--text Ruby / Ruby on Rails / Python / Django / HTML / CSS / Haml / Sass(SCSS) / JavaScript / jQuery / SQL / Git / GitHub / AWS(EC2, S3) / heroku / Bootstrap (etc...)
+                %h5.about-learn__box__tech--text Ruby / Ruby on Rails / Python / Django / HTML / CSS / Haml / Sass(SCSS) / JavaScript / jQuery / Chart.js / SQL / Git / GitHub / AWS(EC2, S3) / heroku / Bootstrap (etc...)
           .about-contact
             .about-contact__head
               %h4.about-contact__head__text リンク先 / お問い合わせ
