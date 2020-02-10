@@ -347,14 +347,19 @@ header{
   bottom: 0;
 }
 
-.js-mail{
-  color:rgb(33, 63, 87);
-  cursor: pointer;
+.emphasized{
+  font-weight: bold;
+  color: navy;
 }
 
-.js-mail:hover{
-  color:steelblue;
-}
+// .js-mail{
+//   color:rgb(33, 63, 87);
+//   cursor: pointer;
+// }
+
+// .js-mail:hover{
+//   color:steelblue;
+// }
 
 .about-wrapper{
   width: 100%;
