@@ -65,6 +65,24 @@
           .works-list__box
             .works-list__box__head.clearfix<
               .works-list__box__head--left
+                = link_to "GiantStep", "https://giantstep.herokuapp.com/" , class: "works-title"
+                = link_to 'https://github.com/hrtg-yamazaki/GiantStep', class: 'works-github' do
+                  = fa_icon 'github'
+                .dev-env
+                  .dev-env__head.clearfix
+                    %h5 開発環境
+                    %span.ruby-app Ruby
+                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / Chart.js / postgreSQL / heroku / Cloudinary / GitHub /
+              .works-list__box__head--right
+                = link_to '', "https://giantstep.herokuapp.com/", class: "page-image works-giantstep"
+                -# %p.works-in-prep no image
+            .works-list__box__content
+              %p.works-list__box__content--detail 生活習慣を記録し、モニタリングするアプリケーションです。睡眠、食事、学習などの習慣に簡単な自己採点を行い、その記録を日々登録することで、累積されたデータをグラフ、カレンダー、表などで閲覧しモニタリングすることが出来ます。自己採点の基準はデフォルトで用意されていますが、各ユーザーが自身で独自に編集することも可能です。
+              %p.access-attention ※こちらはレスポンシブ未対応です
+        .works-list
+          .works-list__box
+            .works-list__box__head.clearfix<
+              .works-list__box__head--left
                 = link_to "FreemarketSample62e","http://13.114.37.243/", class: "works-title"
                 = link_to 'https://github.com/hrtg-yamazaki/freemarket_sample_62e', class: 'works-github' do
                   = fa_icon 'github'
@@ -86,24 +104,6 @@
                 -# ※アクセスにはBasic認証が必要です。ご希望の際は
                 -# %span.js-mail メール
                 -# にてご連絡ください。
-        .works-list
-          .works-list__box
-            .works-list__box__head.clearfix<
-              .works-list__box__head--left
-                = link_to "GiantStep", "#" , class: "works-title"
-                = link_to 'https://github.com/hrtg-yamazaki/GiantStep', class: 'works-github' do
-                  = fa_icon 'github'
-                .dev-env
-                  .dev-env__head.clearfix
-                    %h5 開発環境
-                    %span.ruby-app Ruby
-                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / Chart.js / postgreSQL / heroku / GitHub /
-              .works-list__box__head--right
-                = link_to '', "https://github.com/hrtg-yamazaki/GiantStep", class: "page-image works-giantstep"
-                -# %p.works-in-prep no image
-            .works-list__box__content
-              %p.works-list__box__content--detail ( Railsを使って開発中の、生活習慣を記録するアプリケーションです )
-              %p.access-attention 現在作成中です
         .works-list
           .works-list__box
             .works-list__box__head.clearfix<
