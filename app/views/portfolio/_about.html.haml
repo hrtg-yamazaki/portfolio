@@ -1,0 +1,38 @@
+.about-section
+  .about-head
+    %h2.about-head__en About
+    %span.about-head__jp -管理者について-
+  .about-main
+    .about-main__box
+      .about-main__box__head
+        .about-name
+          %h3.about-name__jp 山﨑 啓世
+          %h3.about-name__en Hirotsugu Yamazaki
+      .about-main__box__detail
+        .about-profile
+          %p.about-profile__text 神奈川県横浜市出身。2019年9月末にプログラミングスクール「TECH::EXPERT」に入学、同12月に卒業し、現在は学習と開発を続けながら、エンジニアを目指して就職活動を行っています。
+        .about-learn
+          .about-learn__box
+            .about-learn__box__head
+              %h4.about-learn__box__head--text 学習中/使用中の言語、技術など
+            .about-learn__box__tech
+              %h5.about-learn__box__tech--text Python / Django / Ruby / Ruby on Rails /  HTML / CSS / Haml / Sass(SCSS) / JavaScript / jQuery / Vue.js / SQL / Git / GitHub / AWS(EC2, S3) / heroku / Docker (etc...)
+        .about-contact
+          .about-contact__head
+            %h4.about-contact__head__text リンク先 / お問い合わせ
+          .about-contact__link
+            %h5.about-contact__link__text ◎ リンク
+            = link_to "https://github.com/hrtg-yamazaki/", class: "about-contact__link__github" do
+              = fa_icon "github"
+              %span GitHub
+            = link_to "Wantedly", "https://www.wantedly.com/users/129120524", class: "about-contact__link__wantedly"
+          .about-contact__mail
+            %p.about-contact__mail__head ◎ メールアドレス
+            = mail_to "t62.yamazaki.hirotsugu@gmail.com", class: "about-contact__mail__address" do
+              = fa_icon "envelope"
+              %span gmail ( 就職活動用 )
+            = mail_to "hrtg.ymzk.dev@gmail.com", class: "about-contact__mail__address" do
+              = fa_icon "envelope"
+              %span gmail ( その他 )
+            %p.mail-attention ※企業の採用担当者様は（就職活動用）に、その他お問い合わせは（その他）からご連絡ください。
+            %p.mail-attention ※管理の都合で、翌日以降の返信になる場合がございます。ご了承ください。

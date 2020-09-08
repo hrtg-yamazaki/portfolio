@@ -1,0 +1,35 @@
+.works-section
+  .works-head
+    %h2.works-head__en Works
+    %span.works-head__jp -開発実績-
+    %p.recommend-browser
+      ※最新版のGoogle Chromeでのアクセスを推奨いたします。
+      %br
+      (一部ブラウザではレイアウトが正しく表示されないことがございます。)
+  .works-lists
+    .works-lists__box
+      - works.each do |work|
+        .works-list
+          .works-list__box
+            .works-list__box__head.clearfix<
+              .works-list__box__head--left
+                = link_to work.name, work.url, class: "works-title"
+                = link_to work.url_github, class: 'works-github' do
+                  = fa_icon 'github'
+                .dev-env
+                  .dev-env__head.clearfix
+                    %h5 開発環境
+                    - if work.lang == "Python"
+                      %span.python-app Python
+                    - elsif work.lang == "Ruby"
+                      %span.ruby-app Ruby
+                  %p.used-tech
+                    = work.techs
+              .works-list__box__head--right
+                = link_to '', work.url, class: "page-image #{work.image_class}"
+            .works-list__box__content
+              %p.works-list__box__content--detail
+                = work.description
+              - if work.attention.present?
+                %p.access-attention
+                  = work.attention
