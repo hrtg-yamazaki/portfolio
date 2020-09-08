@@ -44,84 +44,31 @@
         (一部ブラウザではレイアウトが正しく表示されないことがございます。)
     .works-lists
       .works-lists__box
-        .works-list
-          .works-list__box
-            .works-list__box__head.clearfix<
-              .works-list__box__head--left
-                = link_to "Djappy", "https://djappy.herokuapp.com/" , class: "works-title"
-                = link_to 'https://github.com/hrtg-yamazaki/djappy', class: 'works-github' do
-                  = fa_icon 'github'
-                .dev-env
-                  .dev-env__head.clearfix
-                    %h5 開発環境
-                    %span.python-app Python
-                  %p.used-tech Python3 / Django / scss / jQuery / postgreSQL / Heroku / Cloudinary / GitHub /
-              .works-list__box__head--right
-                = link_to '', "https://djappy.herokuapp.com/", class:'page-image works-djappy'
-            .works-list__box__content
-              %p.works-list__box__content--detail オリジナルのブログアプリケーションです。「PythonとDjangoを基本からしっかり理解する」をテーマに、スタンダードな機能(画像付き記事の投稿・編集・検索、ユーザー認証など)を出来る限り丁寧に実装していきました。今後は管理人の学習の進行を反映させる形で、機械学習関連の機能を中心にアップデートしていきたいと考えています。レスポンシブ対応済。
-              -# %p.access-attention 
-        .works-list
-          .works-list__box
-            .works-list__box__head.clearfix<
-              .works-list__box__head--left
-                = link_to "GiantStep", "https://giantstep.herokuapp.com/" , class: "works-title"
-                = link_to 'https://github.com/hrtg-yamazaki/GiantStep', class: 'works-github' do
-                  = fa_icon 'github'
-                .dev-env
-                  .dev-env__head.clearfix
-                    %h5 開発環境
-                    %span.ruby-app Ruby
-                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / Chart.js / postgreSQL / heroku / Cloudinary / GitHub /
-              .works-list__box__head--right
-                = link_to '', "https://giantstep.herokuapp.com/", class: "page-image works-giantstep"
-                -# %p.works-in-prep no image
-            .works-list__box__content
-              %p.works-list__box__content--detail 生活習慣を記録し、モニタリングするアプリケーションです。睡眠、食事、学習などの習慣に簡単な自己採点を行い、その記録を日々登録することで、累積されたデータをグラフ、カレンダー、表などで閲覧しモニタリングすることが出来ます。自己採点の基準はデフォルトで用意されていますが、各ユーザーが自身で独自に編集することも可能です。レスポンシブ対応済。
-              -# %p.access-attention ※こちらはレスポンシブ未対応です
-        .works-list
-          .works-list__box
-            .works-list__box__head.clearfix<
-              .works-list__box__head--left
-                = link_to "FreemarketSample62e","http://13.114.37.243/", class: "works-title"
-                = link_to 'https://github.com/hrtg-yamazaki/freemarket_sample_62e', class: 'works-github' do
-                  = fa_icon 'github'
-                .dev-env
-                  .dev-env__head.clearfix
-                    %h5 開発環境
-                    %span.ruby-app Ruby
-                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / unicorn / nginx / mySQL / capistrano / AWS (EC2, S3) / GitHub /
-              .works-list__box__head--right
-                = link_to '', "http://13.114.37.243/", class:'page-image works-fmsample'
-            .works-list__box__content
-              %p.works-list__box__content--detail プログラミングスクールの最終課題として開発に取り組んだ、既存フリマアプリのコピーサイトです。同期のメンバーと４人チームで、アジャイル方式による共同開発を行いました。デプロイ先として、AWS(EC2, S3)を利用しています。
-              %p.access-attention<
-                ※ BASIC認証情報 => ID: '
-                %span.emphasized 62teame
-                ', PASS: '
-                %span.emphasized fmsample62e
-                '
-                -# ※アクセスにはBasic認証が必要です。ご希望の際は
-                -# %span.js-mail メール
-                -# にてご連絡ください。
-        .works-list
-          .works-list__box
-            .works-list__box__head.clearfix<
-              .works-list__box__head--left
-                = link_to "ChatSpace", "https://github.com/hrtg-yamazaki/chat-space" , class: "works-title"
-                = link_to 'https://github.com/hrtg-yamazaki/chat-space', class: 'works-github' do
-                  = fa_icon 'github'
-                .dev-env
-                  .dev-env__head.clearfix
-                    %h5 開発環境
-                    %span.ruby-app Ruby
-                  %p.used-tech Ruby / Ruby on Rails / Haml / scss / jQuery / mySQL / GitHub / AWS /
-              .works-list__box__head--right
-                = link_to '', "https://github.com/hrtg-yamazaki/chat-space", class:'page-image works-chatspace'
-            .works-list__box__content
-              %p.works-list__box__content--detail プログラミングスクールで学習した内容を元に開発を行った、チャットアプリケーションです。非同期通信を用いた画像付きメッセージの送信・自動更新機能が実装されており、グループ機能を利用したコミュニケーションが可能です。
-              %p.access-attention ※ EC2インスタンス停止中(リンク先はGitHubのリポジトリURLです。)
-
+        - @works.each do |work|
+          .works-list
+            .works-list__box
+              .works-list__box__head.clearfix<
+                .works-list__box__head--left
+                  = link_to work.name, work.url, class: "works-title"
+                  = link_to work.url_github, class: 'works-github' do
+                    = fa_icon 'github'
+                  .dev-env
+                    .dev-env__head.clearfix
+                      %h5 開発環境
+                      - if work.lang == "Python"
+                        %span.python-app Python
+                      - elsif work.lang == "Ruby"
+                        %span.ruby-app Ruby
+                    %p.used-tech
+                      = work.techs
+                .works-list__box__head--right
+                  = link_to '', work.url, class: "page-image #{work.image_class}"
+              .works-list__box__content
+                %p.works-list__box__content--detail
+                  = work.description
+                - if work.attention.present?
+                  %p.access-attention
+                    = work.attention
 
 .about-wrapper
   .about-section
@@ -142,7 +89,7 @@
               .about-learn__box__head
                 %h4.about-learn__box__head--text 学習中/使用中の言語、技術など
               .about-learn__box__tech
-                %h5.about-learn__box__tech--text Ruby / Ruby on Rails / Python / Django / HTML / CSS / Haml / Sass(SCSS) / JavaScript / jQuery / Chart.js / SQL / Git / GitHub / AWS(EC2, S3) / heroku / Bootstrap (etc...)
+                %h5.about-learn__box__tech--text Python / Django / Ruby / Ruby on Rails /  HTML / CSS / Haml / Sass(SCSS) / JavaScript / jQuery / Vue.js / SQL / Git / GitHub / AWS(EC2, S3) / heroku / Docker (etc...)
           .about-contact
             .about-contact__head
               %h4.about-contact__head__text リンク先 / お問い合わせ
