@@ -78,9 +78,20 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+# # for heroku
+# production:
+#   <<: *default
+#   adapter: postgresql
+#   encoding: unicode
+#   pool: 5
+
+# for AWS EC2
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+  database: portfolio_production
+  username: root
+  password:
+  encoding: utf8
+
 
