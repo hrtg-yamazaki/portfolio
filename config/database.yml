@@ -90,8 +90,6 @@ test:
 production:
   <<: *default
   database: portfolio_production
-  username: portfolio_user
-  password:
+  username: <%= ENV['PT_DB_USER'] %>
+  password: <%= ENV['PT_DB_PASS'] %>
   encoding: utf8
-
-
