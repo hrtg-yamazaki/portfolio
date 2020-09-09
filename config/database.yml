@@ -90,7 +90,7 @@ test:
 production:
   <<: *default
   database: portfolio_production
-  username: root
+  username: portfolio_user
   password:
   encoding: utf8
 
