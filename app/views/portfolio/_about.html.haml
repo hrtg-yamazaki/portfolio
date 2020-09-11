@@ -16,16 +16,20 @@
             .about-learn__box__head
               %h4.about-learn__box__head--text 学習中/使用中の言語、技術など
             .about-learn__box__tech
-              %h5.about-learn__box__tech--text Python / Django / Ruby / Ruby on Rails /  HTML / CSS / Haml / Sass(SCSS) / JavaScript / jQuery / Vue.js / SQL / Git / GitHub / AWS(EC2, S3) / heroku / Docker (etc...)
+              %h5.about-learn__box__tech--text [サーバーサイド]： Python / Django / Flask / Ruby / Ruby on Rails
+              %h5.about-learn__box__tech--text [フロントエンド]： HTML / CSS / Haml / Sass(SCSS) / JavaScript(jQuery, Vue.js)
+              %h5.about-learn__box__tech--text [インフラその他]： Git / GitHub / Docker(docker-compose) / AWS(EC2, S3, ELB, Route53, ACM) / heroku / SQL
         .about-contact
           .about-contact__head
             %h4.about-contact__head__text リンク先 / お問い合わせ
-          .about-contact__link
+          .about-contact__link<
             %h5.about-contact__link__text ◎ リンク
             = link_to "https://github.com/hrtg-yamazaki/", class: "about-contact__link__github" do
               = fa_icon "github"
-              %span GitHub
+              %span &nbspGitHub
             = link_to "Wantedly", "https://www.wantedly.com/users/129120524", class: "about-contact__link__wantedly"
+            = link_to "Qiita", "https://qiita.com/toffe_hy/"#
+            = link_to "( coming soon... )", "/"
           .about-contact__mail
             %p.about-contact__mail__head ◎ メールアドレス
             = mail_to "t62.yamazaki.hirotsugu@gmail.com", class: "about-contact__mail__address" do
@@ -36,3 +40,5 @@
               %span gmail ( その他 )
             %p.mail-attention ※企業の採用担当者様は（就職活動用）に、その他お問い合わせは（その他）からご連絡ください。
             %p.mail-attention ※管理の都合で、翌日以降の返信になる場合がございます。ご了承ください。
+
+
