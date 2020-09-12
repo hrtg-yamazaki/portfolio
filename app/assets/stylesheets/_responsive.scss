@@ -1,0 +1,281 @@
+@media (max-width: 1080px){
+  .header-right__sp{
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    display: block;
+    position: relative;
+    .fa-bars{
+      font-size: 32px;
+      color: white;
+      line-height: 60px;
+      padding-right: 5px;
+      cursor: pointer;
+    }
+    .fa-bars:hover{
+      color: steelblue;
+    }
+    &__close{
+      font-size: 14px;
+      color: white;
+      line-height: 60px;
+      padding-right: 5px;
+      display: none;
+      cursor: pointer;
+    }
+    &__close:hover{
+      color: steelblue;
+    }
+    &__menu{
+      display: none;
+      width: 150px;
+      position: absolute;
+      right: 0;
+      &--list{
+        display: block;
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        p{
+          line-height: 40px;
+          color: #888;
+          // -webkit-text-stroke: 0.1px black;
+        }
+        :hover{
+          color: steelblue;
+        }
+      }
+    }
+  }
+  .header-right__pc{
+    display: none;
+  }
+
+  .works-wrapper{
+    width: 100%;
+    height: 1520px;
+  }
+
+  .works-section{
+    width: 100%;
+    height: 1520px;
+    padding: 40px;
+  }
+
+  .works-lists{
+    &__box{
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+      display: block;
+    }
+  }
+
+  .works-list{
+    width: 100%;
+    height: 25%;
+  }
+}
+
+@media (max-width: 600px){
+  .about-contact__link{
+    a{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .about-contact__mail__address{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px){
+
+  .works-wrapper{
+    height: auto;
+  }
+
+  .works-section{
+    width: 100%;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .works-head{
+    margin-left: 10px;
+  }
+
+  .recommend-browser{
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .works-lists{
+    &__box{
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      display: block;
+    }
+  }
+
+  .works-list{
+    &__box{
+      &__head{
+        height: auto;
+        &--left{
+          float: none;
+          width: 100%;
+        }
+        &--right{
+          float: none;
+          width: 100%;
+          height: auto;
+          padding: 20px;
+        }
+      }
+      &__content{
+        height: auto;
+      }
+    }
+  }
+
+  .page-image{
+    padding-top: 53%;
+  }
+
+  .works-in-prep{
+    display: none;
+  }
+
+  .access-attention{
+    position: static;
+  }
+
+  .about-wrapper{
+    height: auto;
+  }
+
+  .about-section{
+    width: 100%;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .about-head{
+    margin-left: 10px;
+    &__jp{
+      display: block;
+    }
+  }
+
+  .about-main{
+    &__box{
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      display: block;
+    }
+  }
+
+  .site-section{
+    width: 100%;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .site-head{
+    margin-left: 10px;
+    &__jp{
+      display: block;
+    }
+  }
+
+  .site-main{
+    &__box{
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      display: block;
+    }
+  }
+
+  .site-contents{
+    padding: 4px;
+  }
+
+  .white-comment{
+    &__side{
+      height: 40px;
+      width: 40px;
+    }
+    &__inside{
+      width: 70%;
+      padding: 0 0 0 15px;
+      float: left;
+    }
+  }
+
+  .green-comment{
+    &__inside{
+      width: 70%;
+      padding: 0;
+    }
+  }
+
+  .speaker-icon{
+    &__name{
+      font-size: 18px;
+    }
+  }
+
+  .white-balloon{
+    padding: 10px;
+  }
+
+  .green-balloon{
+    padding: 10px;
+  }
+
+  .site-comment{
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 375px){
+  .introduction{
+    right: 5px;
+  }
+}
+
+@media (max-width: 360px){
+  .introduction{
+    width: 270px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    &__box{
+      padding: 10px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .self-intro__explain{
+    height: calc(100% - 30px);
+    padding: 5px 5px 0 5px ;
+    &__box{
+      &--text{
+        font-size: 12px;
+      }
+      &--tips{
+        font-size: 11px;
+      }
+    }
+  }
+
+}

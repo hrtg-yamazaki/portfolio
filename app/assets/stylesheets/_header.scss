@@ -1,0 +1,56 @@
+header{
+  height: 100px;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  .header-box{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.header-left{
+  width: 50%;
+  height: 100%;
+  float: left;
+  &__logo{
+    text-decoration: none;
+    height: 100%;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 60px;
+    letter-spacing: 1px;
+  }
+  &__logo:hover{
+    color: steelblue;
+  }
+}
+
+.header-right{
+  width: 50%;
+  height: 100%;
+  float: right;
+  &__sp{
+    display: none;
+  }
+  &__pc{
+    line-height: 60px;
+    text-align: right;
+    &__link{
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 22px;
+      padding-right: 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    &__link:hover{
+      color: steelblue;
+    }
+  }
+}
+
+.js-works .js-about .js-pageinfo{
+  cursor: pointer;
+}

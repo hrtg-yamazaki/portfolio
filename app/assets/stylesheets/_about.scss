@@ -1,0 +1,175 @@
+.about-section{
+  width: 100%;
+  padding: 40px;
+  background-color: #010818;
+  margin: 0 auto;
+}
+
+.about-head{
+  color: rgba(255, 255, 255, 0.7);
+  &__en{
+    font-size: 32px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  &__jp{
+    display: inline;
+    padding-left: 5px;
+  }
+}
+
+.about-main{
+  width: 100%;
+  height: calc(100% - 48px);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  &__box{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    &__head{
+      padding: 20px 10px 10px 10px;
+    }
+    &__detail{
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+
+.about-name{
+  color: rgba(255, 255, 255, 0.7);
+  text-align: right;
+  margin-right: 20px;
+  &__jp{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  &__en{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+
+.about-profile{
+  padding: 25px;
+  &__text{
+    font-size: 14px;
+  }
+}
+
+.about-learn{
+  margin-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  &__box{
+    padding: 45px 25px;
+    &__head{
+      text-align: center;
+      &--text{
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+    &__tech{
+      padding: 10px;
+      &--text{
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+
+.about-contact{
+  padding: 40px 25px;
+  &__head{
+    padding: 5px;
+    text-align: center;
+    &__text{
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+  &__link{
+    padding: 5px;
+    &__text{
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    a{
+      font-size: 14px;
+      color: steelblue;
+      width: 48%;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 6px;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid whitesmoke;
+      text-decoration: none;
+      color: whitesmoke;
+      border-radius: 4px;
+    }
+    a:hover{
+      color: steelblue;
+      background-color: lightgray;
+    }
+  }
+  &__mail{
+    padding: 5px;
+    &__head{
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    &__address{
+      font-size: 14px;
+      color: steelblue;
+      width: 48%;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 6px;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid whitesmoke;
+      text-decoration: none;
+      color: whitesmoke;
+      border-radius: 4px;
+    }
+    &__address:hover{
+      color: steelblue;
+      background-color: lightgray;
+    }
+  }
+}
+
+.mail-attention{
+  font-size: 10px;
+  margin-top: 5px;
+  color: crimson;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.about-etc{
+  padding: 10px;
+  margin-top: 10px;
+  &--text{
+    font-size: 10px;
+  }
+}
