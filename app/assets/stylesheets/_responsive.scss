@@ -79,6 +79,12 @@
   }
 }
 
+@media (max-width: 750px){
+  .about-contact__mail__address{
+    width: 90%;
+  }
+}
+
 @media (max-width: 600px){
   .about-contact__link{
     a{
@@ -89,6 +95,7 @@
   .about-contact__mail__address{
     width: 100%;
     margin-left: 0;
+    font-size: 11px;
   }
 }
 

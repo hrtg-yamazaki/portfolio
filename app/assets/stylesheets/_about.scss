@@ -92,7 +92,7 @@
 
 
 .about-contact{
-  padding: 40px 25px;
+  padding: 40px 25px 20px;
   &__head{
     padding: 5px;
     text-align: center;
@@ -130,7 +130,7 @@
     }
   }
   &__mail{
-    padding: 5px;
+    padding: 20px 5px;
     &__head{
       font-size: 14px;
       font-weight: bold;
@@ -139,13 +139,12 @@
     &__address{
       font-size: 14px;
       color: steelblue;
-      width: 48%;
+      width: 50%;
       height: 40px;
-      margin-top: 10px;
-      margin-left: 6px;
+      margin: 15px auto 0 auto;
       line-height: 40px;
       text-align: center;
-      display: inline-block;
+      display: block;
       border: 1px solid whitesmoke;
       text-decoration: none;
       color: whitesmoke;
@@ -160,10 +159,9 @@
 
 .mail-attention{
   font-size: 10px;
-  margin-top: 5px;
   color: crimson;
-  margin-left: 10px;
-  margin-top: 15px;
+  margin: 20px auto 0 auto;
+  text-align: center;
 }
 
 .about-etc{
