@@ -27,12 +27,8 @@
               %span GitHub
             = link_to "Wantedly", "https://www.wantedly.com/users/129120524", class: "about-contact__link__wantedly"
           .about-contact__mail
-            %p.about-contact__mail__head ◎ メールアドレス
-            = mail_to "t62.yamazaki.hirotsugu@gmail.com", class: "about-contact__mail__address" do
-              = fa_icon "envelope"
-              %span gmail ( 就職活動用 )
-            = mail_to "hrtg.ymzk.dev@gmail.com", class: "about-contact__mail__address" do
-              = fa_icon "envelope"
-              %span gmail ( その他 )
-            %p.mail-attention ※企業の採用担当者様は（就職活動用）に、その他お問い合わせは（その他）からご連絡ください。
-            %p.mail-attention ※管理の都合で、翌日以降の返信になる場合がございます。ご了承ください。
+            %p.about-contact__mail__head ◎ 新ポートフォリオサイト
+            = link_to "https://hrtg-ymzk.com", class: "about-contact__mail__address" do
+              %span 新ページへ移動
+            %p.mail-attention このページは現在、AWSから公開した新しいドメインにて運営・更新を行なっています。
+            %p.mail-attention お手数ですがお問い合わせの際は上記より新ページへリンクしてください。
