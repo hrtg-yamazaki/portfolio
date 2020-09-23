@@ -1,0 +1,132 @@
+
+///// ページ全体設定 /////
+
+*{
+    box-sizing: border-box;
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid steelblue;
+}
+
+@mixin contact-basic-field {
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    -webkit-appearance: none;
+    border: 1px solid #aaa;
+}
+
+@mixin contact-basic-button{
+    border: 1px solid #aaa;
+    padding: 5px 20px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.contact-wrapper{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: image_url("dawn.jpg");
+    background-size: cover;
+}
+
+.contact-container{
+    width: 680px;
+    height: 550px;
+    background-color: whitesmoke;
+    opacity: 0.85;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px;
+    padding: 10px;
+    &__box{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contact-head{
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    border-bottom: 1px solid #aaa;
+    color: #333;
+}
+
+///// 問合せフォーム /////
+
+.contact-form{
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 10px;
+}
+
+.contact-label{
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+    color: #333;
+}
+
+.contact-field{
+    padding: 10px;
+    width: 100%;
+    &__input{
+        @include contact-basic-field;
+        height: 35px;
+    }
+    &__textarea{
+        @include contact-basic-field;
+        height: 200px;
+        resize: none;
+    }
+}
+
+.contact-submit{
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    padding: 10px;
+    &__button{
+        @include contact-basic-button;
+        background-color: rgba(30, 80, 130, 1);
+        color: whitesmoke;
+    }
+    &__button:hover{
+        background-color: rgba(90, 150, 210, 1);
+    }
+}
+
+.back-button{
+    @include contact-basic-button;
+    background-color: darkgray;
+    color: whitesmoke;
+    text-decoration-line: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.back-button:hover{
+    background-color: whitesmoke;
+    color: steelblue;
+}
+
