@@ -83,6 +83,9 @@
   .about-contact__mail__address{
     width: 90%;
   }
+  .contact-wrapper{
+    padding: 10px;
+  }
 }
 
 @media (max-width: 600px){
@@ -249,6 +252,10 @@
 
   .site-comment{
     font-size: 12px;
+  }
+
+  .contact-confirm__box__text{
+    font-size: 11px;
   }
 
 }

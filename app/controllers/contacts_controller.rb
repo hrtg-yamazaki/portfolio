@@ -10,8 +10,7 @@ class ContactsController < ApplicationController
             if @contact.save
                 ContactMailer.notify_admin(@contact).deliver_now
                 ContactMailer.confirm_for_visitor(@contact).deliver_now
-                # redirect_to sended_contacts_path あとでこちらに
-                redirect_to root_path
+                redirect_to sended_contacts_path
             else
                 render "contacts/new"
             end
