@@ -110,10 +110,17 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
         @include contact-basic-button;
         background-color: rgba(30, 80, 130, 1);
         color: whitesmoke;
+        display: inline-block;
     }
     &__button:hover{
         background-color: rgba(90, 150, 210, 1);
     }
+}
+
+.contact-submit-hidden{
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .back-button{
@@ -128,6 +135,11 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 .back-button:hover{
     background-color: whitesmoke;
     color: steelblue;
+}
+
+.error_message{
+    color: crimson;
+    font-size: 10px;
 }
 
 

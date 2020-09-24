@@ -3,15 +3,29 @@
         .contact-container__box
             %p.contact-head お問い合わせ
             = form_for @contact, url: contacts_path, method: :post, html: {class: "contact-form"} do |f|
-                .contact-field
-                    %p.contact-label お名前
+                -# ----- errors ------
+                - if @contact.errors
+                    - name_error = @contact.errors.messages[:name][0]
+                    - email_errors = @contact.errors.messages[:email]
+                    - content_error = @contact.errors.messages[:content][0]
+                -# ----- enderrors ------
+                .contact-field<
+                    %span.contact-label お名前
+                    - if name_error
+                        %span.contact-label.error_message=name_error
                     = f.text_field :name, autofocus: :true, class: "contact-field__input"
-                .contact-field
-                    %p.contact-label メールアドレス
+                .contact-field<
+                    %span.contact-label メールアドレス
+                    - if email_errors
+                        - email_errors.each do |error|
+                            %span.contact-label.error_message=error
                     = f.text_field :email, autofocus: :true, class: "contact-field__input"
-                .contact-field
-                    %p.contact-label お問い合わせ内容
+                .contact-field<
+                    %span.contact-label お問い合わせ内容
+                    - if content_error
+                        %span.contact-label.error_message=content_error
                     = f.text_area :content, autofocus: :true, class: "contact-field__textarea"
-                .contact-submit
-                    = f.submit "送信", class: "contact-submit__button"
+                .contact-submit<
+                    = f.submit "", class: "contact-submit-hidden"
+                    %span.contact-submit__button#js-contact-submit 送信
                     = link_to "戻る", root_path, class: "back-button"
