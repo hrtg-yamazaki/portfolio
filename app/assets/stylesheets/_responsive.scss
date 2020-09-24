@@ -79,6 +79,15 @@
   }
 }
 
+@media (max-width: 750px){
+  .about-contact__mail__address{
+    width: 90%;
+  }
+  .contact-wrapper{
+    padding: 10px;
+  }
+}
+
 @media (max-width: 600px){
   .about-contact__link{
     a{
@@ -89,6 +98,7 @@
   .about-contact__mail__address{
     width: 100%;
     margin-left: 0;
+    font-size: 11px;
   }
 }
 
@@ -242,6 +252,10 @@
 
   .site-comment{
     font-size: 12px;
+  }
+
+  .contact-confirm__box__text{
+    font-size: 11px;
   }
 
 }

@@ -10,7 +10,7 @@
           %h3.about-name__en Hirotsugu Yamazaki
       .about-main__box__detail
         .about-profile
-          %p.about-profile__text 神奈川県横浜市出身。2019年9月末にプログラミングスクール「TECH::EXPERT」に入学、同12月に卒業し、現在は学習と開発を続けながら、エンジニアを目指して就職活動を行っています。
+          %p.about-profile__text 神奈川県横浜市出身。2019年9月末にプログラミングスクール「TECH::EXPERT(現テックキャンプ 転職コース)」に入学、同12月に卒業し、現在は学習と開発を続けながら、エンジニアを目指して就職活動を行っています。
         .about-learn
           .about-learn__box
             .about-learn__box__head
@@ -37,14 +37,8 @@
             = link_to "Qiita", "https://qiita.com/toffe_hy/"#
             = link_to "( coming soon... )", "/"
           .about-contact__mail
-            %p.about-contact__mail__head ◎ メールアドレス
-            = mail_to "t62.yamazaki.hirotsugu@gmail.com", class: "about-contact__mail__address" do
+            %p.about-contact__mail__head ◎ お問い合わせ
+            = link_to new_contact_path, class: "about-contact__mail__address" do
               = fa_icon "envelope"
-              %span gmail ( 就職活動用 )
-            = mail_to "hrtg.ymzk.dev@gmail.com", class: "about-contact__mail__address" do
-              = fa_icon "envelope"
-              %span gmail ( その他 )
-            %p.mail-attention ※企業の採用担当者様は（就職活動用）に、その他お問い合わせは（その他）からご連絡ください。
-            %p.mail-attention ※管理の都合で、翌日以降の返信になる場合がございます。ご了承ください。
-
-
+              %span お問い合わせフォームはこちら
+            %p.mail-attention ※管理者の都合により、翌日以降の返信になる場合がございます。ご了承ください。

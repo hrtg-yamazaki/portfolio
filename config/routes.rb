@@ -3,5 +3,11 @@ Rails.application.routes.draw do
 
   root "portfolio#index"
   resources :portfolio, only: :index
-  
+
+  resources :contacts, only: [:new, :create] do
+    collection do
+      get "sended"
+    end
+  end
+
 end

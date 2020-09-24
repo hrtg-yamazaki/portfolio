@@ -1,0 +1,13 @@
+.contact-wrapper
+    .contact-container
+        .contact-container__box
+            %p.contact-head 送信完了
+            .contact-confirm
+                .contact-confirm__box
+                    %p.contact-confirm__box__text お問い合わせの送信が完了しました。
+                    %p.contact-confirm__box__text 入力いただいたメールアドレスへ確認メールをお送りしています。
+                    %br/
+                    %p.contact-confirm__box__text お問い合わせ内容の確認後、メールにてお返事をお送り致します。
+                    %p.contact-confirm__box__text 数日お時間を頂く場合がございますが、今暫くお待ちください。
+                    %p.contact-confirm__box__button
+                        = link_to "トップページへ", root_path, class: "back-button"
