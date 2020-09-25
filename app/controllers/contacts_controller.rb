@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
 
-    before_action :redirect_to_root, only: [:create, :sended]
-    before_action :redirect_to_new, only: [:sended]
+    before_action :redirect_to_root, only: [:create, :sent]
+    before_action :redirect_to_new, only: [:sent]
 
     def new
         @contact = Contact.new
@@ -15,7 +15,7 @@ class ContactsController < ApplicationController
                 ContactMailer.notify_admin(@contact).deliver_now
                 ContactMailer.confirm_for_visitor(@contact).deliver_now
                 session[:from_create] = "True"
-                redirect_to sended_contacts_path
+                redirect_to sent_contacts_path
             else
                 render "contacts/new"
             end
@@ -24,7 +24,7 @@ class ContactsController < ApplicationController
         end
     end
 
-    def sended
+    def sent
         session.delete(:from_new)
         session.delete(:from_create)
     end
