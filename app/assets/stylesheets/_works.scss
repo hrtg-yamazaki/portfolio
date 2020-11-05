@@ -101,6 +101,10 @@
   background-image: image_url("ss_giantstep3.png");
 }
 
+.works-lilliputs{
+  background-image: image_url("ss_lilliputs1.png")
+}
+
 .works-in-prep{
   height: 100%;
   width: 100%;
@@ -169,6 +173,18 @@
       text-align: center;
       line-height: 22px;
       background-color: steelblue;
+      border: 1px solid navy;
+      color: #eee;
+      border-radius: 2px;
+    }
+    .php-app{
+      display: block;
+      width: 60px;
+      height: 24px;
+      float: right;
+      text-align: center;
+      line-height: 22px;
+      background-color: rgb(80, 100, 180);
       border: 1px solid navy;
       color: #eee;
       border-radius: 2px;
